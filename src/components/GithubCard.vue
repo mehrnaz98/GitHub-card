@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+defineProps({
+  username: { type: String, required: true },
+});
+</script>
 
 <template>
   <div class="card card-side bg-base-100 shadow-xl">
