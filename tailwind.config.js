@@ -1,9 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
-  content: [],
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./src/main.js",
+    "./src/App.vue",
+    "./src/components/GithubCard.vue",
+    "./postcss.config.js",
+    "./vite.config.js",
+    "./src/style.css",
+  ],
   theme: {
     extend: {},
   },
-  plugins: [],
-}
-
+  plugins: [require("daisyui")],
+};
