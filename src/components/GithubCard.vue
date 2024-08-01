@@ -2,6 +2,8 @@
 defineProps({
   username: { type: String, required: true },
 });
+
+fetch("https://api.github.com/users/[username]");
 </script>
 
 <template>
