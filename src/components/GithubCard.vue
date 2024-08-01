@@ -24,7 +24,9 @@ fetch(`https://api.github.com/users/${props.username}`).then(async (res) => {
     </figure>
     <div class="card-body">
       <h2 class="card-title">{{ user.name }}</h2>
-      <p>Click the button to watch on Jetflix app.</p>
+      <p>
+        <strong>{{ user.location }}</strong>
+      </p>
       <div class="card-actions justify-end">
         <a :href="user.html_url" class="btn btn-primary">View Profile</a>
       </div>
