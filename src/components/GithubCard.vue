@@ -3,7 +3,9 @@ const props = defineProps({
   username: { type: String, required: true },
 });
 
-fetch("https://api.github.com/users/$props.username");
+fetch("https://api.github.com/users/$props.username").then(async (res) => {
+  const data = await res.json();
+});
 </script>
 
 <template>
