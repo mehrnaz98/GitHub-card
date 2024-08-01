@@ -1,9 +1,9 @@
 <script setup>
-defineProps({
+const props = defineProps({
   username: { type: String, required: true },
 });
 
-fetch("https://api.github.com/users/[username]");
+fetch("https://api.github.com/users/$props.username");
 </script>
 
 <template>
