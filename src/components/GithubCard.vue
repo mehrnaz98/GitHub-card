@@ -14,6 +14,7 @@ fetch(`https://api.github.com/users/${props.username}`).then(async (res) => {
 </script>
 
 <template>
+  {{ user }}
   <div class="card card-side bg-base-100 shadow-xl">
     <figure>
       <img
