@@ -27,6 +27,7 @@ fetch(`https://api.github.com/users/${props.username}`).then(async (res) => {
       <p>
         <strong>{{ user.location }}</strong>
       </p>
+      <p>{{ user.public_repos }} Public repositories</p>
       <div class="card-actions justify-end">
         <a :href="user.html_url" class="btn btn-primary">View Profile</a>
       </div>
