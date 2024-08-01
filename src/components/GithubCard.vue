@@ -14,8 +14,7 @@ fetch(`https://api.github.com/users/${props.username}`).then(async (res) => {
 </script>
 
 <template>
-  <pre>{{ user }}</pre>
-  <div v-if="user" class="card card-side bg-base-100 shadow-xl">
+  <div v-if="user" class="m-5 shadow-xl card card-side bg-base-100 shadow-xl">
     <figure>
       <img :src="user.avatar_url" alt="users profile photo" />
     </figure>
@@ -24,7 +23,7 @@ fetch(`https://api.github.com/users/${props.username}`).then(async (res) => {
       <p>
         <strong>{{ user.location }}</strong>
       </p>
-      <p>{{ user.public_repos }} Public repositories</p>
+      <p>{{ user.public_repos }} Public Repositories</p>
       <div class="card-actions justify-end">
         <a :href="user.html_url" class="btn btn-primary">View Profile</a>
       </div>
