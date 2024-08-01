@@ -17,10 +17,7 @@ fetch(`https://api.github.com/users/${props.username}`).then(async (res) => {
   <pre>{{ user }}</pre>
   <div class="card card-side bg-base-100 shadow-xl">
     <figure>
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-        alt="Movie"
-      />
+      <img :src="user.avatar_url" alt="users profile photo" />
     </figure>
     <div class="card-body">
       <h2 class="card-title">{{ user.name }}</h2>
