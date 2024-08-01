@@ -15,7 +15,7 @@ fetch(`https://api.github.com/users/${props.username}`).then(async (res) => {
 
 <template>
   <pre>{{ user }}</pre>
-  <div class="card card-side bg-base-100 shadow-xl">
+  <div v-if="user" class="card card-side bg-base-100 shadow-xl">
     <figure>
       <img :src="user.avatar_url" alt="users profile photo" />
     </figure>
