@@ -1,5 +1,11 @@
-# Vue 3 + Vite
+# GitHub Profile Card
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Check out this GitHub Profile Card, which fetches and displays user profiles from the GitHub API, showcasing key information about each user.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Live Demo
+
+You can view the live version of this project here: [View on Netlify](https://incredible-sopapillas-3f91cc.netlify.app/)
+
+## Project Acknowledgment
+
+This project was developed as part of the Vue Component Fundamentals with the Composition API course taught by Daniel Kelly at Vue School.
